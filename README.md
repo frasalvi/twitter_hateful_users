@@ -12,3 +12,5 @@ conda env create -f environment.yml
 ```
 $ pre-commit install
 ```
+
+3. Download the data from [Kaggle](https://www.kaggle.com/datasets/manoelribeiro/hateful-users-on-twitter) and place them into the ```data/``` folder
