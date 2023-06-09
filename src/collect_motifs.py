@@ -289,7 +289,7 @@ if __name__ == "__main__":
         printt("Computing triadic census for the original graph...")
         triadic_census = my_triadic_census(G)
         with open(BASE_DIR + "triadic_census_original.json", "w") as f:
-            json.dump(triadic_census, f)
+            json.dump(triadic_census, f, indent=4)
     else:
         printt("Found triadic census for the original graph.")
         with open(BASE_DIR + "triadic_census_original.json", "r") as f:
@@ -306,10 +306,10 @@ if __name__ == "__main__":
 
         if not os.path.isfile(BASE_DIR + f"triadic_census_null_{i}.json"):
             printt(f"Computing triadic census for the null graph {i}...")
-            G_null = nx.directed_configuration_model(in_degrees, out_degrees, create_using=nx.DiGraph)
+            G_null = nx.directed_configuration_model(in_degrees, out_degrees, create_using=nx.DiGraph, seed=i)
             res = my_triadic_census(G_null)
             with open(BASE_DIR + f"triadic_census_null_{i}.json", "w") as f:
-                json.dump(res, f)
+                json.dump(res, f, indent=4)
         else:
             printt(f"Found triadic census for the null graph {i}.")
             with open(BASE_DIR + f"triadic_census_null_{i}.json", "r") as f:
