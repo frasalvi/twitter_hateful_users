@@ -3,7 +3,7 @@
 Hateful speech on online platforms is a prominent and widespread issue that can lead to real-world violence and discrimination, making its mitigation crucial for creating safe online environments. In this project, we approach this problem by implementing automated systems that detect hateful users with the help of Graph Machine Learning. We focus on a retweet graph collected in October 2017, with a sample of users being labeled as hateful or normal. We study the network by analyzing its degree and feature distributions, their correlations with labels, and the occurrence of triadic motifs, and we compare the graph with theoretical random models. Subsequently, we train various predictive models on the task of node prediction, including logistic regression, label propagation, GraphSAGE, and Graph Attention Networks (GAT). Our results indicate that GraphSAGE performs the best in terms of F1 score, outperforming all baselines and demonstrating its effectiveness in generalizing to unseen nodes and running on large graphs. Overall, our findings highlight the potential of Graph Machine Learning for fighting hateful speech on social media platforms.
 
 ## Authors
-This project was carried out by Francesco Salvi and Giacomo Orsi, master's students at EPFL. Data is provided by the paper [*Characterizing and Detecting Hateful Users on Twitter* by Ribeiro et al. (2018)](https://arxiv.org/abs/1803.08977).
+This project was carried out by Francesco Salvi and Giacomo Orsi, in the context of the course "Network Machine learning" at EPFL. Data is provided by the paper *Characterizing and Detecting Hateful Users on Twitter* by Ribeiro et al. (2018) [1](https://arxiv.org/abs/1803.08977).
 
 ## Report
 [Here](report.pdf) you can find a detailed report where we: 
